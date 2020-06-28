@@ -1,0 +1,26 @@
+.then(function(object){
+    object.forEach(element => { 
+      let toyCollection = document.getElementById("toy-collection");  
+      toyCollection.appendChild(div);
+      let div = document.createElement("div");
+      div.setAttribute("class","card");
+      let h1 = document.createElement("h1");
+      div.appendChild(h1)
+      h1.textContent = element.name
+      let img = document.createElement("img");
+      img.setAttribute("class","toy-avatar");
+      div.appendChild(img);
+      img.innerText.src = element.image;
+      let p = document.createElement("p");
+      p.innerText = element.likes;
+      div.appendChild(p);
+      let button = document.createElement("button");
+      button.setAttribute("class","ike-btn");
+      div.appendChild(button);
+      button.innerText = element.likes;
+      
+
+
+    })
+   
+  })
